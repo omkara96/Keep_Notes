@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/_26sdp"
+    android:layout_marginEnd="@dimen/_26sdp"
+    android:layout_marginBottom="@dimen/_45sdp"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp">
+
+    <ImageView
+        android:id="@+id/imageOnBoarding"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_margin="15dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        />
+
+    <TextView
+        android:id="@+id/titleTextOnBoarding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ubuntu_bold"
+        />
+
+    <TextView
+        android:id="@+id/textDescriptionOnBoarding"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorNoteSubtitleText"
+        android:fontFamily="@font/ubuntu"
+        android:textAlignment="center"
+        android:textSize="16sp"/>
+
+</LinearLayout>

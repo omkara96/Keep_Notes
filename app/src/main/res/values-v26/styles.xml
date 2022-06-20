@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="navigationTheme">
+
+        <!-- Color of text and icon when SELECTED   -->
+        <item name="colorPrimary" parent="Theme.MaterialComponents.Light.NoActionBar">@color/nevyblue
+        </item>
+        <item name="colorControlHighlight" parent="Theme.MaterialComponents.Light.NoActionBar">
+            @color/nevyblue
+        </item>
+
+    </style>
+
+
+</resources>

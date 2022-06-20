@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    android:background="@color/prim"
+    android:paddingLeft="15dp"
+    >
+
+    <TextView
+        android:id="@+id/menu_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorIcons"
+        android:text="@string/keep_your_important_notes_with_you"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="@dimen/_20sdp"
+        android:layout_above="@+id/menu_slogan"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/ic_flag_icon"
+        android:layout_above="@+id/app_name"
+        android:padding="10dp"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/cycle_icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_34sdp"/>
+
+</RelativeLayout>

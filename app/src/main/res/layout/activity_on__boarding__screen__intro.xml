@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prim"
+    tools:context=".activities.On_Boarding_Screen_Intro">
+
+    <Button
+        android:id="@+id/buttonOnBoardingAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:textSize="@dimen/_15sdp"
+        app:cornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/colorAccent"
+       android:clickable="true"
+        android:focusableInTouchMode="false"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/onBoadSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:textSize="@dimen/_15sdp"
+        android:text="Skip"
+        android:clickable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/transparent"
+        android:focusable="true" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/onBoardingViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOnBoardingAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onBoadSkip" />
+
+    <LinearLayout
+        android:id="@+id/layoutOnBoardingIndicator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/buttonOnBoardingAction"
+        app:layout_constraintEnd_toStartOf="@id/buttonOnBoardingAction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/buttonOnBoardingAction"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
